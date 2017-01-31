@@ -7,6 +7,13 @@
 <body>
 <div class="container" style="margin-top:100px;">
 	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">
+			<div class="result alert alert-success"><strong> Best time to post twits to your favourite user</strong></div>
+		</div>
+	</div>
+	
+	<div class="row">
 		<div class="col-sm-2"></div>
 			<div class="col-sm-4">
 			<form>
@@ -47,7 +54,7 @@ function post_data()
 	$("#wait_btn").show();
 	$('#find_btn').prop('disabled', true);
 	$( ".result" ).html( "" );
-	var url = "http://localhost/twitter/twitter.php?user_name="+$("#user_name").val()+"&user_id="+$("#user_id").val();
+	var url = "http://localhost/twitter/tw.php?user_name="+$("#user_name").val()+"&user_id="+$("#user_id").val();
 	$.get( url, function( data ) {
 	  $( ".result" ).html( data );
 	  $("#wait_btn").hide();
