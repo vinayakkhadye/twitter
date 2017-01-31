@@ -51,6 +51,14 @@
 <script type="text/javascript">
 function post_data()
 {
+	var user_name 	= $("#user_name").val();
+	var user_id		= $("#user_id").val();
+	if(  user_name.length === 0 && user_id.length === 0)
+	{
+		$( ".result" ).html( "please provide user name or password" );
+		return false;
+	}
+	return false;
 	$("#wait_btn").show();
 	$('#find_btn').prop('disabled', true);
 	$( ".result" ).html( "" );
