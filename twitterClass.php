@@ -118,7 +118,7 @@ class twitter
 						$max_posts_day	= $key;
 					}
 				}
-				$result[]	 = 	'Most likely day would be '.$max_posts_day;
+				$result['message'][]	 = 	'Most likely day would be '.$max_posts_day;
 				
 				$user_hourwise_last_post	= $user_hourwise_last_post[$max_posts_day];
 				$max_posts_hour				= "";
@@ -134,7 +134,7 @@ class twitter
 						$max_posts_hour		= $key;
 					}
 				}
-				$result[]	 = 	'Most likely day time would be '.$max_posts_hour.' to '. ($max_posts_hour+1) .' Hour of day';
+				$result['message'][]	 = 	'Most likely day time would be '.$max_posts_hour.' to '. ($max_posts_hour+1) .' Hour of day';
 			}
 			return $result;
 		}
