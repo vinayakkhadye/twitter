@@ -54,7 +54,7 @@ function post_data()
 	$("#wait_btn").show();
 	$('#find_btn').prop('disabled', true);
 	$( ".result" ).html( "" );
-	var url = "http://localhost/twitter/tw.php?user_name="+$("#user_name").val()+"&user_id="+$("#user_id").val();
+	var url = "http://localhost/twitter/twitter.php?user_name="+$("#user_name").val()+"&user_id="+$("#user_id").val();
 	$.get( url, function( data ) {
 	  $( ".result" ).html( data );
 	  $("#wait_btn").hide();
