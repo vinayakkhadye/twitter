@@ -1,5 +1,5 @@
 <?php
-require_once('twClass.php');
+require_once('twitterClass.php');
 $user_name	= $_GET['user_name'];
 $user_id	= $_GET['user_id'];
 $tw = new twitter($user_name,$user_id);
